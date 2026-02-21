@@ -1,0 +1,315 @@
+/* CSS reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, header, nav, main, footer, h1, div, img, ul, ol, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p,
+ul, ol, figure {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+/* Body and Main */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+    background-color: #E5E7EB;
+    color: #2A2F35;
+    width: 100%;
+    height: 100%;
+    min-width: 325px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p + h3 {
+    margin-top: 4rem;
+}
+
+p, th, td, ul li, ol li {
+    font-size: 13px;
+}
+
+p {
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+
+p + p {
+    margin-top: 1rem;
+}
+
+ul li, ol li {
+    margin-left: 2rem;
+}
+
+li + li {
+    margin-top: 1rem;
+}
+
+a {
+    font-size: 16px;
+    color: #E5E7EB;
+    text-decoration: underline;
+}
+
+.heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+.no-line-space p {
+    margin-bottom: 0;
+}
+
+.no-line-space  p + p {
+    margin-top: 0;
+}
+
+/* Keyboard Accessibility */
+
+a:focus, button:focus {
+    outline: 3px solid #6366F1;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position:absolute;
+    left:-9999px;
+}
+
+.skip-link:focus {
+    left:10px;
+    top:10px;
+    background:#000;
+    color:#fff;
+    padding:0.5rem;
+    border-radius: 10px;
+}
+
+
+/* Table */
+
+table + h3 {
+    margin-top: 1.5rem;
+}
+
+th {
+    text-align: right;
+    padding: 0.25rem;
+}
+
+td {
+    text-align: right;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cards */
+
+.card {
+    display: grid;
+    background-color: #2A2F35;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 20px;
+    color: #FFFFFF;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card p, .card td {
+    font-weight: 400;
+}
+
+.card li {
+    margin-top: 0.25rem;
+}
+
+.contact-card {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+/* Divider */
+
+.divider {
+    border: none;
+    border-top: 2px solid #2A2F35;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 90%;
+}
+
+/* Button */
+
+.button {
+    display: block;
+    width: 160px;
+    background-color: #F59E0B;
+    text-decoration: none;
+    color: #2A2F35;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #2A2F35;
+    padding: 0.2rem;
+    text-align: center;
+    font-size: 13px;
+    margin: 3rem auto 0;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.button:hover {
+    color: #E5E7EB;
+    font-weight: 400;
+}
+
+.button:active {
+    box-shadow: none;
+}
+
+/* Header */
+
+header {
+    background-color: #2A2F35;
+    border-radius: 0 0 10px 10px;
+    color: #FFFFFF;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Main Content */
+
+.hero-image {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 6rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2A2F35;
+    margin-top: 4rem;
+    color: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container-2 {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: right;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social img {
+    max-width: 40px;
+    margin: 0.5rem;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+footer .heading {
+    margin: 0;
+    text-align: right;
+}
+
+@media (min-width: 750px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2, h3, .heading {
+        font-size: 24px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    p, th, td, ul li, ol li {
+        font-size: 13px;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 400px;
+    }
+
+    .centered {
+        display: grid;
+        justify-content: center;
+    }
+
+    .contact-card {
+        margin-top: 6rem;
+    }
+}
