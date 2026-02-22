@@ -26,13 +26,13 @@
 
     <a href="#main-content" class="skip-link">Skip to content</a>
 
-    <header role="banner">
+    <header>
 
-        <img src="images/backline_ux_logo.png" alt="" role="presentation" width="200" height="200" loading="lazy">
+        <img src="images/backline_ux_logo.png" alt="" width="200" height="200" loading="lazy">
 
     </header>
 
-    <main id="main-content" role="main">
+    <main id="main-content">
 
         <div>
             
@@ -208,9 +208,33 @@
 
         </section>
 
-        <section id="contact" class="card contact-card">
+        <section class="contact-card">
 
             <h2>Contact Us</h2>
+
+            <div id="contact">
+
+                <form id="contactForm" action="/php/sendmail.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" placeholder="Your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+                </form>
+
+                <div id="formFeedback"></div>
+
+            </div>
+
+            <p>Or reach out to us by email.</p>
 
             <a href="mailto:contact@backlineux.com">contact@backlineux.com</a>
 
@@ -218,7 +242,7 @@
 
     </main>
 
-    <footer role="contentinfo">
+    <footer>
 
         <div class="footer-container-1">
 
@@ -246,7 +270,8 @@
 
     </footer>
     
-<script src="script.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/contact.js" defer></script>
 
 </body>
 
