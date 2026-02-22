@@ -258,6 +258,10 @@ header img {
     margin-right: auto;
 }
 
+#formFeedback {
+    text-align: center;
+}
+
 #contact {
     max-width: 600px;
     margin: 0 auto 2rem;
